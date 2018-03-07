@@ -10,6 +10,11 @@
 		AD95FB6F205080850083CFA6 /* FunctionalBuilders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD95FB65205080850083CFA6 /* FunctionalBuilders.framework */; };
 		AD95FB74205080850083CFA6 /* FunctionalBuildersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD95FB73205080850083CFA6 /* FunctionalBuildersTests.swift */; };
 		AD95FB76205080850083CFA6 /* FunctionalBuilders.h in Headers */ = {isa = PBXBuildFile; fileRef = AD95FB68205080850083CFA6 /* FunctionalBuilders.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD95FB80205081000083CFA6 /* ViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD95FB7F205081000083CFA6 /* ViewBuilder.swift */; };
+		AD95FB822050813C0083CFA6 /* Array+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD95FB812050813C0083CFA6 /* Array+NSLayoutConstraint.swift */; };
+		AD95FB842050816D0083CFA6 /* ConstraintBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD95FB832050816D0083CFA6 /* ConstraintBuilder.swift */; };
+		AD95FB86205082C40083CFA6 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD95FB85205082C40083CFA6 /* UIView+Constraints.swift */; };
+		AD95FB88205082CD0083CFA6 /* UIView+SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD95FB87205082CD0083CFA6 /* UIView+SafeArea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		AD95FB6E205080850083CFA6 /* FunctionalBuildersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunctionalBuildersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD95FB73205080850083CFA6 /* FunctionalBuildersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalBuildersTests.swift; sourceTree = "<group>"; };
 		AD95FB75205080850083CFA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD95FB7F205081000083CFA6 /* ViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilder.swift; sourceTree = "<group>"; };
+		AD95FB812050813C0083CFA6 /* Array+NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
+		AD95FB832050816D0083CFA6 /* ConstraintBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintBuilder.swift; sourceTree = "<group>"; };
+		AD95FB85205082C40083CFA6 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		AD95FB87205082CD0083CFA6 /* UIView+SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SafeArea.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +83,11 @@
 			children = (
 				AD95FB68205080850083CFA6 /* FunctionalBuilders.h */,
 				AD95FB69205080850083CFA6 /* Info.plist */,
+				AD95FB7F205081000083CFA6 /* ViewBuilder.swift */,
+				AD95FB812050813C0083CFA6 /* Array+NSLayoutConstraint.swift */,
+				AD95FB832050816D0083CFA6 /* ConstraintBuilder.swift */,
+				AD95FB85205082C40083CFA6 /* UIView+Constraints.swift */,
+				AD95FB87205082CD0083CFA6 /* UIView+SafeArea.swift */,
 			);
 			path = FunctionalBuilders;
 			sourceTree = "<group>";
@@ -148,7 +163,8 @@
 				TargetAttributes = {
 					AD95FB64205080850083CFA6 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Manual;
 					};
 					AD95FB6D205080850083CFA6 = {
 						CreatedOnToolsVersion = 9.2;
@@ -196,6 +212,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD95FB88205082CD0083CFA6 /* UIView+SafeArea.swift in Sources */,
+				AD95FB842050816D0083CFA6 /* ConstraintBuilder.swift in Sources */,
+				AD95FB80205081000083CFA6 /* ViewBuilder.swift in Sources */,
+				AD95FB822050813C0083CFA6 /* Array+NSLayoutConstraint.swift in Sources */,
+				AD95FB86205082C40083CFA6 /* UIView+Constraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,18 +355,23 @@
 		AD95FB7A205080850083CFA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = FunctionalBuilders/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SzymonMrozek.FunctionalBuilders;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,17 +380,21 @@
 		AD95FB7B205080850083CFA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = FunctionalBuilders/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SzymonMrozek.FunctionalBuilders;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -374,6 +404,7 @@
 		AD95FB7D205080850083CFA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FunctionalBuildersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -387,6 +418,7 @@
 		AD95FB7E205080850083CFA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FunctionalBuildersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
