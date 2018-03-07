@@ -56,6 +56,8 @@ public struct ConstraintBuilder<T: UIView> {
 
 extension ConstraintBuilder {
     
+    // These functions might use lenses in the future
+    
     /// Center y constraints
     
     public func centerYConstraint(source: NSLayoutYAxisAnchor, constant: CGFloat = 0.0) -> ConstraintBuilder {
