@@ -21,14 +21,14 @@ public extension ViewBuilder {
     
     /// Return final view
     
-    public func endEditing() -> T {
-        return self.view
+    public static func endEditing(builder: Self) -> T {
+        return builder.view
     }
     
     /// Calls layoutSubviews() on view property
     
-    public func layout() -> Self {
-        view.layoutSubviews()
-        return self
+    public static func layout(builder: Self) -> Self {
+        builder.view.layoutSubviews()
+        return builder
     }
 }
