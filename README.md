@@ -44,7 +44,7 @@ stackView.constraintBuilder
 	|> ConstraintBuilder.leadingConstraint(source: builder.view.safeAreaLeadingAnchor, constant: 15.0)
 	|> ConstraintBuilder.trailingConstraint(source: builder.view.safeAreaTrailingAnchor, constant: 15.0)
 	|> ConstraintBuilder.heightConstraint(constant: 200.0)
-	s|> ConstraintBuilder.activate
+	|> ConstraintBuilder.activate
 ```
 
 It looks more like flow-composed set of functions, we once set the destination view (the one that we’re setting up) and pass only source for the constraints generating functions.
