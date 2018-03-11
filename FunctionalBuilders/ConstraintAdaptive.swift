@@ -13,7 +13,7 @@ public protocol ConstraintAdaptive {
 }
 
 extension ConstraintAdaptive where Self: UIView {
-    var constraintBuilder: ConstraintBuilder<Self> {
+    public var constraintBuilder: ConstraintBuilder<Self> {
         return ConstraintBuilder(destination: self)
     }
 }

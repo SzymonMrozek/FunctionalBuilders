@@ -30,7 +30,7 @@ public func + (lhs: [NSLayoutConstraint], rhs: NSLayoutConstraint) -> [NSLayoutC
 }
 
 extension Array where Element : NSLayoutConstraint {
-    func activate() {
+    public func activate() {
         NSLayoutConstraint.activate(self)
     }
 }
