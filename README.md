@@ -7,7 +7,7 @@ A template for building views in **functional** way described in article.
 Introducing **ViewBuilders** instead of using storyboards. Example **MVVM+VB** architecture:
 
 <p align="center">
-  <img src="resources/architecture.png" alt="Architecture"/>
+  <img src="Resources/architecture.png" alt="Architecture"/>
 </p>
 
 Generally the idea of **ViewBuilders** is to separate installing and setting up view to small functions and create one function that contatenates them all in flow. 
@@ -44,7 +44,7 @@ stackView.constraintBuilder
 	|> ConstraintBuilder.leadingConstraint(source: builder.view.safeAreaLeadingAnchor, constant: 15.0)
 	|> ConstraintBuilder.trailingConstraint(source: builder.view.safeAreaTrailingAnchor, constant: 15.0)
 	|> ConstraintBuilder.heightConstraint(constant: 200.0)
-	|> ConstraintBuilder.activate
+	s|> ConstraintBuilder.activate
 ```
 
 It looks more like flow-composed set of functions, we once set the destination view (the one that we’re setting up) and pass only source for the constraints generating functions.
