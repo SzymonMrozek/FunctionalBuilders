@@ -15,6 +15,7 @@
 		AD95FB842050816D0083CFA6 /* ConstraintBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD95FB832050816D0083CFA6 /* ConstraintBuilder.swift */; };
 		AD95FB86205082C40083CFA6 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD95FB85205082C40083CFA6 /* UIView+Constraints.swift */; };
 		AD95FB88205082CD0083CFA6 /* UIView+SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD95FB87205082CD0083CFA6 /* UIView+SafeArea.swift */; };
+		ADFF1B5E205599400069F787 /* ConstraintAdaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF1B5D205599400069F787 /* ConstraintAdaptive.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		AD95FB832050816D0083CFA6 /* ConstraintBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintBuilder.swift; sourceTree = "<group>"; };
 		AD95FB85205082C40083CFA6 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		AD95FB87205082CD0083CFA6 /* UIView+SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SafeArea.swift"; sourceTree = "<group>"; };
+		ADFF1B5D205599400069F787 /* ConstraintAdaptive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintAdaptive.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				AD95FB832050816D0083CFA6 /* ConstraintBuilder.swift */,
 				AD95FB85205082C40083CFA6 /* UIView+Constraints.swift */,
 				AD95FB87205082CD0083CFA6 /* UIView+SafeArea.swift */,
+				ADFF1B5D205599400069F787 /* ConstraintAdaptive.swift */,
 			);
 			path = FunctionalBuilders;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADFF1B5E205599400069F787 /* ConstraintAdaptive.swift in Sources */,
 				AD95FB88205082CD0083CFA6 /* UIView+SafeArea.swift in Sources */,
 				AD95FB842050816D0083CFA6 /* ConstraintBuilder.swift in Sources */,
 				AD95FB80205081000083CFA6 /* ViewBuilder.swift in Sources */,
