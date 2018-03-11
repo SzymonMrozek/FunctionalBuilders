@@ -13,6 +13,7 @@ Introducing **ViewBuilders** instead of using storyboards. Example **MVVM+VB** a
 Generally the idea of **ViewBuilders** is to separate installing and setting up view to small functions and create one function that contatenates them all in flow. 
 
 ```swift
+
 public static func buildView(withFrame frame: CGRect) -> HomeView {
    let homeView = HomeView(frame: frame)
    
@@ -58,4 +59,4 @@ If you have any ideas how to make **FunctionalBuilders** better or found, fixed 
 
 ### License
 
-FunctionalBuilders is released under an MIT license. See [License.md](License.md) for more information.
+FunctionalBuilders is released under an MIT license. See [License.md](LICENSE.md) for more information.
