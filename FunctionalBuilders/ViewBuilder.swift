@@ -16,7 +16,7 @@ public protocol ViewBuilder {
     
     weak var view: T! { get }
     
-    static func buildView(frame: CGRect) -> T 
+    static func buildView(withFrame frame: CGRect) -> T 
 }
 
 public extension ViewBuilder {
