@@ -46,10 +46,14 @@ class FunctionalBuildersTests: XCTestCase {
     func someTest() {
         let someSource = UIView()
         
+        let rootView = UIView()
+        rootView.addSubview(someSource)
+        
         someSource.constraintBuilder
-            |> ConstraintBuilder.widthConstraint(constant: 24.0)
-            >>> ConstraintBuilder.heightConstraint(constant: 20.0)
-            >>> ConstraintBuilder.activate
+            |> width(constant: 24.0)
+            |> height(constant: 20.0)
+            |> centerY(source: rootView.centerYAnchor, relation: .less)
+            |> activate
     }
     
 }

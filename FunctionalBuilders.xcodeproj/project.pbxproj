@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD015FD22059B94A00102E85 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015FD12059B94A00102E85 /* ConstraintRelation.swift */; };
 		AD95FB6F205080850083CFA6 /* FunctionalBuilders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD95FB65205080850083CFA6 /* FunctionalBuilders.framework */; };
 		AD95FB74205080850083CFA6 /* FunctionalBuildersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD95FB73205080850083CFA6 /* FunctionalBuildersTests.swift */; };
 		AD95FB76205080850083CFA6 /* FunctionalBuilders.h in Headers */ = {isa = PBXBuildFile; fileRef = AD95FB68205080850083CFA6 /* FunctionalBuilders.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD015FD12059B94A00102E85 /* ConstraintRelation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
 		AD95FB65205080850083CFA6 /* FunctionalBuilders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FunctionalBuilders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD95FB68205080850083CFA6 /* FunctionalBuilders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionalBuilders.h; sourceTree = "<group>"; };
 		AD95FB69205080850083CFA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				AD95FB85205082C40083CFA6 /* UIView+Constraints.swift */,
 				AD95FB87205082CD0083CFA6 /* UIView+SafeArea.swift */,
 				ADFF1B5D205599400069F787 /* ConstraintAdaptive.swift */,
+				AD015FD12059B94A00102E85 /* ConstraintRelation.swift */,
 			);
 			path = FunctionalBuilders;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				ADFF1B5E205599400069F787 /* ConstraintAdaptive.swift in Sources */,
 				AD95FB88205082CD0083CFA6 /* UIView+SafeArea.swift in Sources */,
 				AD95FB842050816D0083CFA6 /* ConstraintBuilder.swift in Sources */,
+				AD015FD22059B94A00102E85 /* ConstraintRelation.swift in Sources */,
 				AD95FB80205081000083CFA6 /* ViewBuilder.swift in Sources */,
 				AD95FB822050813C0083CFA6 /* Array+NSLayoutConstraint.swift in Sources */,
 				AD95FB86205082C40083CFA6 /* UIView+Constraints.swift in Sources */,
