@@ -13,10 +13,10 @@ public struct ConstraintBuilder<T: UIView> {
     /// Example usage:
     ///
     ///    stackView.constraintsBuilder
-    ///     |> centerYConstraint(source: someView.centerYAnchor)
-    ///     |> leadingConstraint(source: someView.leadingAnchor, constant: 15.0)
-    ///     |> trailingConstraint(source: someView.trailingAnchor, constant: 15.0)
-    ///     |> heightConstraint(constant: 200.0)
+    ///     |> centerY(source: someView.centerYAnchor)
+    ///     |> leading(source: someView.leadingAnchor, constant: 15.0)
+    ///     |> trailing(source: someView.trailingAnchor, constant: 15.0)
+    ///     |> height(constant: 200.0)
     ///     |> activate
     ///
     ///
