@@ -53,6 +53,20 @@ It looks more like flow-composed set of functions, we once set the destination v
 
 The project is under development now. It is not ready to use in production yet. We are drafting the idea now. Won't reccomend using it in production before we make our code well tested.
 
+### How to use? 
+
+When you're using carthage add this line to your **Cartfile**:
+
+```
+  github "szymonmrozek/FunctionalBuilders"
+```
+
+If you are Cocoapods lover insert following line to **Podfile**:
+
+```
+  pod 'FunctionalBuilders'
+```
+
 ### Contribution
 
 If you have any ideas how to make **FunctionalBuilders** better or found, fixed bugs please create a Pull Request.
