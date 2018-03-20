@@ -1,6 +1,6 @@
 # FunctionalBuilders
 
-A template for building views in **functional** way described in article.
+A template for building views in **functional** way described in [article](https://medium.com/@szymon.mrozek/functional-view-building-6715ea90be8).
 
 ## Idea 
 
