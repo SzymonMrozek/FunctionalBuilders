@@ -107,6 +107,58 @@ public func centerX<T>(source: NSLayoutXAxisAnchor, relation: ConstraintRelation
     }
 }
 
+public func top<T>(source: NSLayoutYAxisAnchor, relation: ConstraintRelation = .equal, constant: CGFloat = 0.0, priority: Float = 1000.0) -> (ConstraintBuilder<T>) -> ConstraintBuilder<T> {
+    return { builder in
+        switch relation {
+        case .equal:
+            return ConstraintBuilder(destination: builder.destination,
+                                     group: builder.modifiedGroup(
+                                        builder.destination.topConstraint(source: source, constant: constant),
+                                        priority: priority)
+            )
+        case .greater:
+            return ConstraintBuilder(destination: builder.destination,
+                                     group: builder.modifiedGroup(
+                                        builder.destination.topConstraintGreaterOrEqual(source: source, constant: constant),
+                                        priority: priority)
+            )
+        case .less:
+            return ConstraintBuilder(destination: builder.destination,
+                                     group: builder.modifiedGroup(
+                                        builder.destination.topConstraintLessOrEqual(source: source, constant: constant),
+                                        priority: priority)
+            )
+        }
+        
+    }
+}
+
+public func bottom<T>(source: NSLayoutYAxisAnchor, relation: ConstraintRelation = .equal, constant: CGFloat = 0.0, priority: Float = 1000.0) -> (ConstraintBuilder<T>) -> ConstraintBuilder<T> {
+    return { builder in
+        switch relation {
+        case .equal:
+            return ConstraintBuilder(destination: builder.destination,
+                                     group: builder.modifiedGroup(
+                                        builder.destination.bottomConstraint(source: source, constant: constant),
+                                        priority: priority)
+            )
+        case .greater:
+            return ConstraintBuilder(destination: builder.destination,
+                                     group: builder.modifiedGroup(
+                                        builder.destination.bottomConstraintGreaterOrEqual(source: source, constant: constant),
+                                        priority: priority)
+            )
+        case .less:
+            return ConstraintBuilder(destination: builder.destination,
+                                     group: builder.modifiedGroup(
+                                        builder.destination.bottomConstraintLessOrEqual(source: source, constant: constant),
+                                        priority: priority)
+            )
+        }
+        
+    }
+}
+
 public func leading<T>(source: NSLayoutXAxisAnchor, relation: ConstraintRelation = .equal, constant: CGFloat = 0.0, priority: Float = 1000.0) -> (ConstraintBuilder<T>) -> ConstraintBuilder<T> {
     return { builder in
         switch relation {

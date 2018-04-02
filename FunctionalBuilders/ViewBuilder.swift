@@ -14,7 +14,7 @@ public protocol ViewBuilder {
     
     associatedtype T: UIView
     
-    weak var view: T! { get }
+    var view: T! { get }
     
     static func buildView(withFrame frame: CGRect) -> T
 }
